@@ -1,14 +1,147 @@
-</html>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Verdana;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: rgb(179, 10, 103);
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #6fa30f;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: rgb(255, 255, 255);
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #eb0707;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #eb0707;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: #eb0707;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #0be90b;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #0ce2be;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus esse, dignissimos repellendus, ut corporis aliquid eum odio recusandae beatae veniam distinctio tempora temporibus ab iste odit quaerat eaque fugiat quia!</p>
 
-    
+<!-- Note -->
+<div style="background:yellow;padding:5px">
+  <h4 style="text-align:center">coś</h4>
+</div>
+
+<!-- Header -->
+<div class="header">
+  <h1>Moja strona</h1>
+  
+</div>
+
+<!-- Navigation Bar -->
+ <hr>
+<div class="navbar">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+<hr>
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <h2>O mnie</h2>
+    <h5>moje zdjęcie:</h5>
+    <div class="fakeimg" style="height:200px"; >
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rollingstone.com%2Fmusic%2Fmusic-news%2Ftravis-scott-astroworld-concert-crush-interview-1234879247%2F&psig=AOvVaw1ZdPxjpW40cbTxpuaH4667&ust=1726845867912000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCODjhamoz4gDFQAAAAAdAAAAABAE" style="width:50%">
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consectetur inventore nihil ullam consequuntur, doloribus alias error porro neque in maxime deserunt earum cum a magnam, officia ad. Velit, dolorem.</p>
+    <h3>Więcej tekstu</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg" style="height:60px;"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rollingstone.com%2Fmusic%2Fmusic-news%2Ftravis-scott-astroworld-concert-crush-interview-1234879247%2F&psig=AOvVaw1ZdPxjpW40cbTxpuaH4667&ust=1726845867912000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCODjhamoz4gDFQAAAAAdAAAAABAE" style="width:50%"></div><br>
+    <div class="fakeimg" style="height:60px;"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rollingstone.com%2Fmusic%2Fmusic-news%2Ftravis-scott-astroworld-concert-crush-interview-1234879247%2F&psig=AOvVaw1ZdPxjpW40cbTxpuaH4667&ust=1726845867912000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCODjhamoz4gDFQAAAAAdAAAAABAE" style="width:50%"></div><br>
+    <div class="fakeimg" style="height:60px;"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rollingstone.com%2Fmusic%2Fmusic-news%2Ftravis-scott-astroworld-concert-crush-interview-1234879247%2F&psig=AOvVaw1ZdPxjpW40cbTxpuaH4667&ust=1726845867912000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCODjhamoz4gDFQAAAAAdAAAAABAE" style="width:50%"></div>
+  </div>
+  <div class="main">
+    <h2>TYTUŁ</h2>
+    <h5>19.09.2024</h5>
+    <div class="fakeimg" style="height:200px;"><img src=https://www.google.com/url?sai&urlhttps%3A%2F%2Fsportigio.com%2Fsportigio-blog%2F7-historia-pilki-noznej-jak-i-kiedy-powstala-pilka-nozna&psigAOvVaw0NOME4xcXJLTCp_tlRCeNm&ust1726845345697000&sourceimages&cdvfe&opi89978449&ved0CBQQjRxqFwoTCMiRpq6mz4gDFQAAAAAdAAAAABAX style="width:50%"></div>
+    <p>trochę tekstu</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam numquam qui architecto quidem autem nulla magni fugiat, enim error quasi voluptas amet aperiam, laboriosam soluta saepe corporis tempora quam corrupti.</p>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rollingstone.com%2Fmusic%2Fmusic-news%2Ftravis-scott-astroworld-concert-crush-interview-1234879247%2F&psig=AOvVaw1ZdPxjpW40cbTxpuaH4667&ust=1726845867912000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCODjhamoz4gDFQAAAAAdAAAAABAE" style="width:50%"></div>
+    <p>Trochę tekstu</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ratione odit impedit cumque, nam illum error sed recusandae incidunt doloribus, deserunt, odio veritatis? Voluptatem tempore pariatur, dicta ad quis fugiat!</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <h2>Koniec</h2>
+</div>
+
 </body>
 </html>
