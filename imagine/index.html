@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Sklep z ciuchami</title>
+<style>
+* {
+    box-sizing: border-box; 
+    margin: 0;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+header ul {
+    display: grid;
+    grid-row: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+header ul li {
+    display: inline;
+    margin: 0 10px;
+}
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+.logo-img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.banner img {
+    max-width: 100%;
+}
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.category {
+    text-align: center;
+    width: 30%;
+}
+.category img {
+    width: 100%;
+    height: auto;
+    
+}
+.products {
+    display: grid;
+    grid-template-rows: 1fr;
+    /* grid-template-columns: 200px 200px 200px 200px 200px 200px 200px 200px; */
+    padding: 20px;
+}
+.product {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+}
+.product img {
+    height: auto;
+    width: 50vh;
+}
+.price {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <ul>
+        <li><a href="#">Jordan 1</a></li>
+        <li><a href="#">Jordan 3</a></li>
+        <li><a href="#">Jordan 4</a></li>
+        <li><a href="#">Jordan 5</a></li>
+        <li><a href="#">Jordan 11</a></li>
+        <li><a href="#">air force 1</a></li>
+        <li><a href="#">yezzey 350</a></li>
+		<li><a href="#">BAPE</a></li>
+    </ul>
+</header>
+
+<section class="logo">
+    <img class="logo-img" src="./img/logo.jpg" alt="Men Fashion Banner">
+</section>
+
+<section class="categories">
+    <div class="category">
+        <img src="./img/1.jpg" alt="Handbags">
+        <h2><p>Buty</p><h2>
+    </div>
+    <div class="category">
+        <img src="./img/hoodie.jpg" alt="Watch">
+        <h2><p>Bluzy</p><h2>
+    </div>
+    <div class="category">
+        <img src="./img/cup.jpg" alt="Shoes">
+        <h2><p>Dodatki</p><h2>
+    </div>
+</section>
+
+<section class="products wrapper">
+    <div class="product">
+        <img src="./img/jordan 1.jpg" alt="Product 1">
+        <p>Jordan Retro 1 Lost & Found.</p>
+        <p class="price">2199.00zł</p>
+        <button>Dodaj do koszyka</button>
+    </div>
+    <div class="product">
+        <img src="./img/3.jpg" alt="Product 2">
+        <p>Jordan Retro 3 J BALVIN SUNSET.</p>
+        <p class="price">2399.00zł</p>
+        <button>Dodaj do koszyka</button>
+    </div>
+    <div class="product">
+        <img src="./img/4.jpg" alt="Product 3">
+        <p>Jordan Retro 4 Frozen Moments.</p>
+        <p class="price">1949.00zł</p>
+        <button>Dodaj do koszyka</button>
+    </div>
+    <div class="product">
+        <img src="./img/5.jpg" alt="Product 4">
+        <p>Jordan Retro 5 x Off White Sail.</p>
+        <p class="price">3399.00zł</p>
+        <button>Dodaj do koszyka</button>
+    </div>
+    <div class="product">
+        <img src="./img/11.jpg" alt="Product 5">
+        <p>Jordan Retro 11 Cherry.</p>
+        <p class="price">1649.00zł</p>
+        <button>Dodaj do koszyka</button>
+    </div>
+    <div class="product">
+        <img src="./img/air firce.jpg" alt="Product 6">
+        <p>Air Force I Low x Supreme White.</p>
+        <p class="price">1049.00zł</p>
+        <button>Dodaj do koszyka</button>
+    </div>
+	    <div class="product">
+        <img src="./img/yezzey.jpg" alt="Product 6">
+        <p>Yeezy Boost 350 Zebra.</p>
+        <p class="price">1899.00zł</p>
+        <button>Dodaj do koszyka</button>
+    </div>
+	    <div class="product">
+        <img src="./img/bape.jpg" alt="Product 6">
+        <p>Shark Zip Hoodie.</p>
+        <p class="price">3149.00 zł</p>
+        <button>Dodaj do koszyka</button>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; Men's shoe store.</p>
+</footer>
+
+</body>
+</html>
