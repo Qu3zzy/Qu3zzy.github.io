@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner img {
+    width: 100%; /* Zmiana szerokości na 100% */
+    height: auto; /* Wysokość automatycznie dostosowuje się do szerokości */
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.category {
+    text-align: center;
+    width: 30%;
+}
+
+.category img {
+    width: 100%; /* Zmiana szerokości na 100% */
+    height: auto; /* Wysokość automatycznie dostosowuje się do szerokości */
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolumny */
+    gap: 20px; /* Odstęp między produktami */
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+.product img {
+    width: 100%; /* Zmiana szerokości na 100% */
+    height: auto; /* Wysokość automatycznie dostosowuje się do szerokości */
+}
+
+.price {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
