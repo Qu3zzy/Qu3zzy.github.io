@@ -35,7 +35,7 @@ nav ul li a {
 }
 
 .banner img {
-    width: 100%; /* Zmiana szerokości na 100% */
+    width: 60%; /* Zmiana szerokości na 60% */
     height: auto; /* Wysokość automatycznie dostosowuje się do szerokości */
 }
 
